@@ -15,6 +15,7 @@ class ServiceConnection(private val url: URL) {
 
     private fun connect() {
         try {
+            // https required: check android http content download
             connection = url.openConnection() as HttpURLConnection
             connection!!.doOutput = false
             connection!!.doInput = true
