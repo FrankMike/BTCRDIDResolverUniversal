@@ -4,7 +4,7 @@ import java.net.URL
 
 class BTCRDIDResolver(private val btcrDiD: String) {
 
-    private val urlString: String = "http://192.168.178.20:8080/1.0/identifiers/"
+    private val urlString: String = "http://10.0.2.2:8080/1.0/identifiers/"
     private var url: URL? = null
     private var did: String = this.btcrDiD
 
