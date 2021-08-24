@@ -9,9 +9,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var textView = findViewById<TextView>(R.id.textView)
-        var did: String = BTCRDIDResolver("did:btcr:xz35-jznz-q9yu-ply").resolve()
-        System.out.println("DID: " + did)
-        textView.text = did
+        val textView = findViewById<TextView>(R.id.textView)
+        Thread {
+            val did: String = BTCRDIDResolver("did:btcr:xz35-jznz-q9yu-ply").resolve()
+            println("DID document: $did")
+            textView.text = did
+        }.start()
     }
 }
