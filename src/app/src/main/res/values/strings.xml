@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">BTCR DID Resolver</string>
+    <string name="button">Button</string>
+    <string name="btcr_did_resolver">BTCR DID Resolver</string>
+    <string name="insert_btcr_did">Insert BTCR DID</string>
+    <string name="btcr_did">BTCR DID</string>
+    <string name="resolve">Resolve</string>
+    <string name="did_document">DID Document</string>
 </resources>
